@@ -2,6 +2,7 @@
     font-family: "JetBrainsMono Nerd Font";
     border: 0px;
     border-radius: 0px;
+    min-height: 5px; 
 }
 
 window#waybar {
@@ -111,6 +112,7 @@ border: 3px solid #f0fff0;
     opacity:1;
     border: 3px solid #f0fff0;
     border-radius: 10px;
+    min-width: 230px;
 
 }
 
@@ -127,7 +129,6 @@ border: 3px solid #f0fff0;
      background-color: #f0fff0;
      min-width: 8px;
      border-radius: 20px;
-     min-height:0px;
 }
 #pulseaudio-slider trough {
     padding: 0px 0px; 
