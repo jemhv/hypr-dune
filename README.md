@@ -11,7 +11,7 @@
 
 ```
 git clone https://github.com/jemhv/hypr-dune.git
-cd hypr-dune
+cd hypr-dune/Hypr-dune/
 cp -rf rofi hypr waybar kitty ~/.config
 
 ```
@@ -34,7 +34,7 @@ cp -r starship.toml ~/.config
 #### Extra added key-bindings
 ```
 mainMod + G =                     opens rofi
-mainMod + B = o                   pens firefox
+mainMod + B =                     opens firefox
 mainMod + L =                     locks the screen (uses Hyprlock)
 mainMod + Print =                 takes fullscreen screenshot
 mainMod + Shift + Print =         takes regional screen shot
