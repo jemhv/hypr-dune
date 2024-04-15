@@ -1,0 +1,32 @@
+{
+    // General Settings
+    "layer": "top",
+    "margin-top": 0,
+    "margin-bottom": 0,
+    "layer": "top",
+    "margin-left": 0,
+    "margin-right": 0,
+    "spacing": 0,
+
+    // Load Modules
+    "include": ["~/.config/waybar/modules.json"],
+
+    // Modules Left
+    "modules-left": [
+        "custom/appmenu",
+	"clock",
+	"tray"
+    ],
+
+    // Modules Center
+    "modules-center": [
+    	"hyprland/workspaces"
+    ],
+
+    // Modules Right    
+    "modules-right": [
+        "group/system",
+        "group/power",
+        "network",
+    ]
+}
