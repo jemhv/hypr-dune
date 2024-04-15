@@ -6,14 +6,26 @@
 
 ![screenshot](https://github.com/jemhv/hypr-dune/blob/main/assets/lockscreen.png)
 
+# Hypr-dune-black
+
+![screenshot](https://github.com/jemhv/hypr-dune/blob/main/assets/hypr-dune-black.png)
+
+![screenshot](https://github.com/jemhv/hypr-dune/blob/main/assets/rofi-black.png)
+
+![screenshot](https://github.com/jemhv/hypr-dune/blob/main/assets/lockscreen-black.png)
+
+
+
 ## Installation
 > Installing the base theme <3
 
 ```
 git clone https://github.com/jemhv/hypr-dune.git
-cp -r hypr-dune/Hypr-dune/* ~/.config/
+cp -r hypr-dune/{theme-name}/* ~/.config/
 
 ```
+> theme-name = Hypr-dune , Hypr-dune-black
+
 > Installing the prompt theme :)
 
 ```
