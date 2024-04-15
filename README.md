@@ -30,9 +30,10 @@ cp -r hypr-dune/{theme-name}/* ~/.config/
 
 ```
 cd starship
-cp -r starship.toml ~/.config
+cp -r {theme-name} ~/.config/starship.toml
 
 ```
+> theme-name = dune.toml, dune-black.toml
 
 #### Please keep the following dependencies installed :3
 

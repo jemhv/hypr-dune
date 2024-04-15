@@ -1,0 +1,182 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = """
+[░▒▓](#3e3e3e)\
+$os\
+[](bg:#5b5b5b fg:#3e3e3e)\
+$username\
+[](bg:#6f6f6f fg:#5b5b5b)\
+$directory\
+[](fg:#6f6f6f bg:#a0a0a0)\
+$git_branch\
+$git_status\
+[](fg:#a0a0a0 bg:#bdbdbd)\
+$python\
+$nodejs\
+$swift\
+$rust\
+$golang\
+$php\
+$ruby\
+$julia\
+[](fg:#bdbdbd bg:#d1d1d1)\
+$time\
+$battery\
+[](fg:#d1d1d1)\
+$line_break$character"""
+
+[os]
+disabled = false
+style = "bg:#3e3e3e fg:#000000"
+
+[os.symbols]
+Alpaquita = " "
+Alpine = " "
+AlmaLinux = " "
+Amazon = " "
+Android = " "
+Arch = " "
+Artix = " "
+CentOS = " "
+Debian = " "
+DragonFly = " "
+Emscripten = " "
+EndeavourOS = " "
+Fedora = " "
+FreeBSD = " "
+Garuda = "󰛓 "
+Gentoo = " "
+HardenedBSD = "󰞌 "
+Illumos = "󰈸 "
+Kali = " "
+Linux = " "
+Mabox = " "
+Macos = " "
+Manjaro = " "
+Mariner = " "
+MidnightBSD = " "
+Mint = " "
+NetBSD = " "
+NixOS = " "
+OpenBSD = "󰈺 "
+openSUSE = " "
+OracleLinux = "󰌷 "
+Pop = " "
+Raspbian = " "
+Redhat = " "
+RedHatEnterprise = " "
+RockyLinux = " "
+Redox = "󰀘 "
+Solus = "󰠳 "
+SUSE = " "
+Ubuntu = " "
+Unknown = " "
+Void = " "
+Windows = "󰍲 "
+
+[username]
+show_always = true
+style_user = "fg:#000000 bg:#5b5b5b"
+style_root = "fg:#000000 bg:#5b5b5b"
+format = '[ $user ]($style)'
+
+[directory]
+style = "fg:#000000 bg:#6f6f6f"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[directory.substitutions]
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Music" = " "
+"Pictures" = " "
+
+[git_branch]
+symbol = ""
+style = "bg:#E0AED0"
+format = '[[ $symbol $branch ](fg:#000000 bg:#a0a0a0)]($style)'
+
+[git_status]
+style = "bg:#E0AED0"
+format = '[[($all_status$ahead_behind )](fg:#000000 bg:#a0a0a0)]($style)'
+
+[python]
+symbol = " "
+style = "bg:#AC87C5"
+format = '[[ $symbol ($version) ](fg:#000000 bg:#bdbdbd)]($style)'
+
+[nodejs]
+symbol = ""
+style = "bg:#AC87C5"
+format = '[[ $symbol ($version) ](fg:#000000 bg:#bdbdbd)]($style)'
+
+[rust]
+symbol = ""
+style = "bg:#AC87C5"
+format = '[[ $symbol ($version) ](fg:#000000 bg:#bdbdbd)]($style)'
+
+[golang]
+symbol = ""
+style = "bg:#AC87C5"
+format = '[[ $symbol ($version) ](fg:#000000 bg:#bdbdbd)]($style)'
+
+[php]
+symbol = ""
+style = "bg:#AC87C5"
+format = '[[ $symbol ($version) ](fg:#000000 bg:#bdbdbd)]($style)'
+
+[ruby]
+symbol = " "
+style = "bg:#AC87C5"
+format = '[[ $symbol ($version) ](fg:#000000 bg:#bdbdbd)]($style)'
+
+[julia]
+symbol = ""
+style = "bg:#AC87C5"
+format = '[[ $symbol ($version) ](fg:#000000 bg:#bdbdbd)]($style)'
+
+[java]
+symbol = " "
+style = "bg:#AC87C5"
+format = '[[ $symbol ($version) ](fg:#000000 bg:#bdbdbd)]($style)'
+
+[swift]
+symbol = " "
+style = "bg:#AC87C5"
+format = '[[ $symbol ($version) ](fg:#000000 bg:#bdbdbd)]($style)'
+
+[time]
+disabled = false
+time_format = "%R" # Hour:Minute Format
+style = "bg:#1d2230"
+format = '[[✧˚·. $time ✧˚·.](fg:#000000 bg:#d1d1d1)]($style)'
+
+[battery]
+disabled = false
+full_symbol = '󰁹'
+charging_symbol = '󰂄 '
+discharging_symbol = '󰂃'
+empty_symbol = '󰂎'
+format = '[$symbol$percentage]($style)'
+
+[[battery.display]]
+threshold = 15
+style = 'fg:#FF2400 bg:#d1d1d1'
+
+[[battery.display]]
+threshold = 50
+style = "fg:#FFDF00 bg:#d1d1d1"
+
+[[battery.display]]
+threshold = 100
+style = "fg:#228B22 bg:#d1d1d1"
+
+[line_break]
+disabled = false
+
+[character]
+disabled = false
+success_symbol = "[❯](#f0fff0)"
+error_symbol = '[❯](#fe6156)'
+vimcmd_symbol = '[](#50c878)'
