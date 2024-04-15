@@ -32,10 +32,11 @@ cp -r starship.toml ~/.config
 >nm-connection-editor blueman-manager brightneddctl pavucontrol power-profiles-daemon
 
 #### Extra added key-bindings
+```
+mainMod + G =                     opens rofi
+mainMod + B = o                   pens firefox
+mainMod + L =                     locks the screen (uses Hyprlock)
+mainMod + Print =                 takes fullscreen screenshot
+mainMod + Shift + Print =         takes regional screen shot
 
-> mainMod + G =                     opens rofi
-> mainMod + B = o                   pens firefox
-> mainMod + L =                     locks the screen (uses Hyprlock)
-> mainMod + Print =                 takes fullscreen screenshot
-> mainMod + Shift + Print =         takes regional screen shot
-
+```
