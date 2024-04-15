@@ -11,8 +11,7 @@
 
 ```
 git clone https://github.com/jemhv/hypr-dune.git
-cd hypr-dune/Hypr-dune/
-cp -rf rofi hypr waybar kitty ~/.config
+cp -r hypr-dune/Hypr-dune/* ~/.config/
 
 ```
 > Installing the prompt theme :)
