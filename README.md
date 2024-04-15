@@ -6,3 +6,36 @@
 
 ![screenshot](https://github.com/jemhv/hypr-dune/blob/main/assets/lockscreen.png)
 
+## Installation
+> Installing the base theme <3
+
+```
+git clone https://github.com/jemhv/hypr-dune.git
+cd hypr-dune
+cp -rf rofi hypr waybar kitty ~/.config
+
+```
+> Installing the prompt theme :)
+
+```
+cd starship
+cp -r starship.toml ~/.config
+
+```
+
+#### Please keep the following dependencies installed :3
+
+> waybar rofi hyprlock hypridle hyprpaper nerd-fonts grim slurp
+
+#### Optional for all modules to work in waybar
+
+>nm-connection-editor blueman-manager brightneddctl pavucontrol power-profiles-daemon
+
+#### Extra added key-bindings
+
+> mainMod + G =                     opens rofi
+> mainMod + B = o                   pens firefox
+> mainMod + L =                     locks the screen (uses Hyprlock)
+> mainMod + Print =                 takes fullscreen screenshot
+> mainMod + Shift + Print =         takes regional screen shot
+
